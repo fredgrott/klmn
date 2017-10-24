@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<!--
+     Orange Purpose
+     Fred Grott
+     http://www.uplabs.com/fred_grott
+-->
+<html lang="en">
+  <head>
+    <!-- Specific to the Materialize CSS Framework -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0 shrink-to-fit=no">
+    <!-- For MS Edge-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- REMOVE THIS IN THE FINAL VERSION OF YOUR SITE -->
+    <meta name="robots" content="noindex">
+
+    <meta name="description" content="OrangePurpose is a multipurpose web template made with Materialize CSS framework">
+
+    <title>PageTitle</title>
+
+    <!-- Your favicons generate from realfavicongenerator.net go below-->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- CSS, CSS framework first than fonts than custom
+           CDN Urls to load this via the cloud are in the docs
+       -->
+    <link href="assets/css/fonts.css" type="text/css" rel="stylesheet">
+    <link href="assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="assets/css/material-icons.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/style.css" type="text/css" rel="stylesheet">
+    <link href="assets/css/custom.css" type="text/css" rel="stylesheet">
+
+    <script src="assets/js/jquery-3.2.1.js"></script>
+    <script src="assets/js/materialize.js"></script>
+    <script src="assets/js/jquery.lettering.js"></script>
+    <script src="assets/js/init.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+    <!-- custom js goes here
+     -->
+    <script type="text/javascript">
+    </script>
+
+    <!-- Schema.org markup goes here -->
+
+    <!-- Open Graph markup goes here -->
+
+    <!-- Twitter Card markup goes here -->
+
+
+  </head>
+  <body>
+    <!-- Alot of web professionals are refraining from using header anymore
+         including AListApart thus I have refarined from using it
+
+         If you feel you really need it and have verified that will not mess up
+         screen readers, than by all means enclose the navbar-fixed div tags with
+         those header tags.
+
+         Note, that I prefer to have my dropdown menu below my the
+         firm address and phone as its more visual pleasing than having
+         the dropdown menu cover the firm address and phone when
+         the viewer is exploring the dropdown menus. Your usage may
+         vary.
+
+    -->
+    <div class="navbar-fixed">
+      <nav id="mynavbar" class="my-z-depth-1 nav-extended" role="navigation">
+        <!-- same container css class as footer so that they vertically align -->
+        <div class="nav-wrapper container">
+          <!-- dopdown definitions -->
+          <ul id="about" class="dropdown-content my-z-depth-1">
+             <li><a href="about-intro.html">Intro</a></li>
+             <li><a href="about-contact.html">Contact</a></li>
+             <li><a href="about-careers.html">Careers</a></li>
+             <li><a href="about-team.html">Team</a></li>
+          </ul>
+          <ul id="news" class="dropdown-content my-z-depth-1">
+             <li><a href="news-blog.html">Blog</a></li>
+             <li><a href="news-events.html">Events</a></li>
+             <li><a href="news-newsletter.html">Newsletter</a></li>
+          </ul>
+          <ul id="services" class="dropdown-content my-z-depth-1">
+             <li><a href="services-intro.html">Intro</a></li>
+             <li><a href="services-clientgallery.html">Clients</a></li>
+             <li><a href="services-packages.html">Packages</a></li>
+          </ul>
+          <ul id="ecom" class="dropdown-content my-z-depth-1">
+            <li><a href="ecom-ecart.html">eCart</a></li>
+            <li><a href="ecom-invoice.html">Invoice</a></li>
+            <li><a href="ecom-orders.html">Orders</a></li>
+            <li><a href="ecom-products.html">Products</a></li>
+          </ul>
+          <ul id="docs" class="dropdown-content my-z-depth-1">
+           <li><a href="docs-intro.html">Intro</a></li>
+           <li><a href="docs-credits.html">Credits</a></li>
+           <li><a href="docs-features.html">Features</a></li>
+           <li><a href="docs-pages.html">Pages</a></li>
+           <li><a href="docs-setup.html">SetUp</a></li>
+          </ul>
+          <!-- mobile hamburger menu activation button -->
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <ul class="top-menu hide-on-med-and-down">
+            <li><a href="index.html"><img src="assets/images/orangedesignlogo-175x48.png"></a></li>
+            <li>&nbsp;&nbsp;&nbsp;Suite 12, 56 Monon Street, Westville, IN 46391 USA</li>
+            <!-- href'ing the phone so we can use the tel: breaks things, so not using at the moment in
+                 this prticular space of the website -->
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1-877-666-6767</li>
+          </ul>
+          <!-- logo for mobile-->
+          <a href="index.html" class="brand-logo hide-on-large-only center"><img src="assets/images/orangedesignlogo-175x48.png"></a>
+          <!-- signin and cart -->
+          <ul class="signincart right">
+                <!-- Not sure why a font-awesome icon goofs up when we add more than one here so
+                     using lock_outline and lock_open from material-icons-->
+                <li><a href="signout.html"><i class="material-icons">lock_outline</i></a></li>
+                <li><a href="ecom-cart.html"><i class="fa  fa-shopping-cart"></i>4</a></li>
+          </ul>
+
+        </div>
+        <!-- Materialize docs are wrong, nav-content for nav-extended needs to be outside
+             of the nav-wraper tags
+        -->
+        <div class="nav-content">
+          <ul class="bottom-menu hide-on-med-and-down ">
+            <li><a class="dropdown-button" data-beloworigin="true" data-hover="true" href="#!" data-activates="about">About<i class="material-icons right">arrow_drop_down_circle</i></a></li>
+            <li><a class="dropdown-button" data-beloworigin="true" data-hover="true" href="#!" data-activates="news">News<i class="material-icons right">arrow_drop_down_circle</i></a></li>
+            <li><a class="dropdown-button" data-beloworigin="true" data-hover="true" href="#!" data-activates="services">Services<i class="material-icons right">arrow_drop_down_circle</i></a></li>
+            <li><a class="dropdown-button" data-beloworigin="true" data-hover="true" href="#!" data-activates="ecom">eCom<i class="material-icons right">arrow_drop_down_circle</i></a></li>
+            <li><a class="dropdown-button" data-beloworigin="true" data-hover="true" href="#!" data-activates="docs">Docs<i class="material-icons right">arrow_drop_down_circle</i></a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- slide-out menu definition
+
+          needs to be outside of the navbar-fixed div tags to work properly
+     -->
+  <ul id="mobile-demo" class="side-nav my-z-depth-1">
+    <li>
+      <!-- since viewers will see this on mobile,
+           might as well do a little call-to-action
+           as far as listing the support email-->
+      <div class="user-view">
+           <div class="background">
+              <img class="responsive-img" src="assets/images/slides/stoicpurpose-slideone.png">
+           </div>
+           <!-- remember we have limited space here, so its the most
+                important possible calls-to-action non-menu stuff from
+                the desktop navbar goes here -->
+           <a href="#!email"><span class="white-text email">support@orangedesign.io</span></a>
+           <a href="#!phone"><span class="white-text phone"><a href="tel:1-877-666-6767" class="white-text">1-877-666-6767</a></span></a>
+      </div>
+    </li>
+    <li class="no-padding">
+       <ul class="collapsible collapsible-accordion my-z-depth-1">
+            <li>
+              <a class="collapsible-header">About<i class="material-icons">arrow_drop_down</i></a>
+              <div class="collapsible-body">
+                  <ul>
+                        <li><a href="about-intro.html">Intro</a></li>
+                        <li><a href="about-contact.html">Contact</a></li>
+                        <li><a href="about-careers.html">Careers</a></li>
+                        <li><a href="about-team.html">Team</a></li>
+                   </ul>
+               </div>
+            </li>
+       </ul>
+     </li>
+
+     <li class="no-padding">
+          <ul class="collapsible collapsible-accordion my-z-depth-1">
+             <li>
+                <a class="collapsible-header">News<i class="material-icons">arrow_drop_down</i></a>
+                <div class="collapsible-body">
+                   <ul>
+                      <li><a href="news-blog.html">Blog</a></li>
+                       <li><a href="news-events.html">Events</a></li>
+                       <li><a href="news-newsletter.html">Newsletter</a></li>
+                   </ul>
+                 </div>
+              </li>
+            </ul>
+      </li>
+      <li class="no-padding">
+        <ul class="collapsible collapsible-accordion my-z-depth-1">
+            <li>
+               <a class="collapsible-header">Services<i class="material-icons">arrow_drop_down</i></a>
+               <div class="collapsible-body">
+                 <ul>
+                   <li><a href="services-intro.html">Intro</a></li>
+                   <li><a href="services-clientgallery.html">Clients</a></li>
+                   <li><a href="services-packages.html">Packages</a></li>
+                 </ul>
+               </div>
+             </li>
+           </ul>
+        </li>
+          <li class="no-padding">
+            <ul class="collapsible collapsible-accordion my-z-depth-1">
+                <li>
+                   <a class="collapsible-header">eCom<i class="material-icons">arrow_drop_down</i></a>
+                   <div class="collapsible-body">
+                     <ul>
+                       <li><a href="ecom-ecart.html">eCart</a></li>
+                       <li><a href="ecom-invoice.html">Invoice</a></li>
+                       <li><a href="ecom-orders.html">Orders</a></li>
+                       <li><a href="ecom-products.html">Products</a></li>
+                     </ul>
+                   </div>
+                 </li>
+               </ul>
+            </li>
+        <li class="no-padding">
+           <ul class="collapsible collapsible-accordion my-z-depth-1">
+              <li>
+                 <a class="collapsible-header">Docs<i class="material-icons">arrow_drop_down</i></a>
+                 <div class="collapsible-body">
+                    <ul>
+                      <li><a href="docs-intro.html">Intro</a></li>
+                      <li><a href="docs-credits.html">Credits</a></li>
+                      <li><a href="docs-features.html">Features</a></li>
+                      <li><a href="docs-pages.html">Pages</a></li>
+                      <li><a href="docs-setup.html">SetUp</a></li>
+                    </ul>
+                </div>
+             </li>
+          </ul>
+       </li>
+     </ul>
+     <!-- main content follows -->
+     <main>
+       <!--
+           WTFM: Materialize by defualt does some werid shit with
+                 negative margins on rows and some container and
+                 section funky-ness which is somewhat eff-ing
+                 frustrating to try to implement certain
+                 visual designs.
+
+                 Thus, my hack is to use the default margins
+                 being set ot my advantage by creating
+                 an extra container/section to balance
+                 top and bottom content areas. Its a hack until
+                 I look at the Materilize v1.00 code and see
+                 what has been changed.
+        -->
+       <div id="pagename-content" class="container section">
+         <div class="row  ">
+         </div>
+       </div>
+       <div class="container">
+         <div id="pagename-content" class="section">
+           <div class="row">
+             <div class="page-title">
+               <h2 id="pagetitle" class="center">PageTitle</h2>
+             </div>
+           </div>
+         </div>
+       </div>
+     </main>
+     <!-- footer -->
+     <footer id="pagefooter" class="page-footer ">
+         <!-- usually the best way to do a footer is 4-col desktop, 2-col tablet, and
+              1-col phone as it balances the space and layout somewhat consistently
+              for all platforms
+
+             make sure to test on all platforms as when you use icons, once in awhile
+             oen has to pad the bottom of a column with br's to get columns
+             to line up properly on the smaller platforms
+          -->
+         <div class="container">
+           <div class="row">
+             <div class="col l3 m6 s12">
+               <h5 class="white-text">Contact</h5>
+               <ul>
+                 <li><a class="white-text" href="#!"><i class="fa fa-envelope amber-text text-lighten-2 "></i>&nbsp;&nbsp;sales@orangedesign.io</a></li>
+                 <li><a class="white-text" href="#!"><i class="fa fa-envelope amber-text text-lighten-2"></i>&nbsp;&nbsp;careers@orangendesign.io</a></li>
+                 <li><a class="white-text" href="#!"><i class="fa fa-skype amber-text text-lighten-2"></i>&nbsp;&nbsp;biz.orangedesign</a></li>
+                 <li><a class="white-text" href="#!"><i class="fa fa-slack amber-text text-lighten-2"></i>&nbsp;&nbsp;orangedesign</a></li>
+                 <li><a class="white-text" href="tel:1-877-456-4567"><i class="fa fa-phone amber-text text-lighten-2"></i>&nbsp;&nbsp;&nbsp;1-877-666-6767</a></li>
+               </ul>
+
+             </div>
+             <div class="col l3 m6 s12">
+               <h5 class="white-text">Address</h5>
+               <h5 class="white-text"><i class="fa  fa-address-card-o amber-text text-lighten-2"></i></h5>
+               <!-- Remember, to repeat your company mailing address info in your schema.org declaration in the html head of your
+                    website. -->
+               <h6 class="white-text">Orange  Design<br/>
+                                      Suite 12<br/>
+                                      56 Monon Street<br/>
+                                      Westville, IN 46391<br/>
+                                      USA</h6>
+                                      <br/>
+                                      <br/>
+             </div>
+             <div class="col l3 m6 s12">
+               <!-- Not to repeat navigation, but to spark a reminder of certain
+                    website entry points that the viewer may want to visit once
+                    they have scanned down all the way to the footer
+                  -->
+               <h5 class="white-text">Navigation</h5>
+               <ul>
+                 <li><a class="white-text" href="about-intro.html"><i class="fa fa-info amber-text text-lighten-2"></i>&nbsp;&nbsp;&nbsp;&nbsp;About</a></li>
+                 <li><a class="white-text" href="about-careers.html"><i class="fa fa-users amber-text text-lighten-2"></i>&nbsp;&nbsp;Careers</a></li>
+                 <li><a class="white-text" href="tos.html"><i class="fa fa-handshake-o amber-text text-lighten-2"></i>&nbsp;Terms Of Service</a></li>
+                 <li><a class="white-text" href="privacy.html"><i class="fa fa-lock amber-text text-lighten-2"></i>&nbsp;&nbsp;&nbsp;&nbsp;Privacy</a></li>
+                 <li><a class="white-text" href="sitemap.html"><i class="fa fa-sitemap amber-text text-lighten-2"></i>&nbsp;&nbsp;&nbsp;SiteMap</a></li>
+               </ul>
+             </div>
+             <div class="col l3 m6 s12">
+               <h5 class="white-text">Connect</h5>
+               <!-- its tempting to use icons here, better to use both to balance with
+                    what I did in the other footer column -->
+               <ul>
+
+                 <li><a  href="#!" target="_blank" class="white-text"><i class="fa fa-facebook-square amber-text text-lighten-2"></i>&nbsp;Facebook</a></li>
+                 <li><a  href="#!" target="_blank" class="white-text"><i class="fa fa-google-plus-square amber-text text-lighten-2"></i>&nbsp;Google+</a></li>
+                 <li><a  href="#!" target="_blank" class="white-text"><i class="fa fa-linkedin-square amber-text text-lighten-2"></i>&nbsp;LinkedIn</a></li>
+                 <li><a  href="#!" target="_blank" class="white-text"><i class="fa fa-twitter-square amber-text text-lighten-2"></i>&nbsp;Twitter</a></li>
+                 <li><a  href="#!" target="_blank" class="white-text"><i class="fa fa-youtube-square amber-text text-lighten-2"></i>&nbsp;YouTube</a></li>
+               </ul>
+
+             </div>
+           </div>
+         </div>
+         <div class="footer-copyright">
+           <div class="container">
+           &copy;2017 Copyright, allrights reserved made by <a href="http://www.uplabs.com/fred_grott" class="white-text"><b>Fred Grott</b></a> with <a class="white-text" href="http://www.materializecss.com"><b>Materialize CSS Framework</b></a>, <a href="atom.io" class="white-text"><b>Atom</b></a>, and some Material Design flair.
+
+           </div>
+         </div>
+       </footer>
+  </body>
+</html>

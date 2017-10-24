@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<!--
+     Orange Purpose
+     Fred Grott
+     http://www.uplabs.com?fred_grott
+-->
+<html lang="en">
+  <head>
+    <!-- Specific to the Materialize CSS Framework -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0 shrink-to-fit=no">
+    <!-- For MS Edge-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- REMOVE THIS IN THE FINAL VERSION OF YOUR SITE -->
+    <meta name="robots" content="noindex">
+
+    <meta name="description" content="OrangePurpose is a multipurpose web template made with Materialize CSS framework">
+
+    <title>OrangePurpose</title>
+
+    <!-- Your favicons generate from realfavicongenerator.net go below-->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- CSS, CSS framework first than fonts than custom
+           CDN Urls to load this via the cloud are in the docs
+       -->
+    <link href="assets/css/fonts.css" type="text/css" rel="stylesheet">
+    <link href="assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="assets/css/material-icons.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/style.css" type="text/css" rel="stylesheet">
+    <link href="assets/css/custom.css" type="text/css" rel="stylesheet">
+
+    <script src="assets/js/jquery-3.2.1.js"></script>
+    <script src="assets/js/materialize.js"></script>
+    <script src="assets/js/jquery.lettering.js"></script>
+    <script src="assets/js/init.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+    <!-- custom js goes here
+     -->
+    <script type="text/javascript">
+    var options= [
+          {selector: "#features",offset: 50, callback: function(el){
+
+
+               $('#featurestitle').toggleClass('scale-in');
+          }},
+          {selector: '#pageslist', offset: 50, callback: function(el){
+               Materialize.showStaggeredList($(el));
+          }},
+          {selector: '#extraslist', offset: 50, callback: function(el){
+               Materialize.showStaggeredList($(el));
+          }},
+          {selector: "#designimpl",offset: 50, callback: function(el){
+
+
+               $('#designimplementation').toggleClass('scale-in');
+          }},
+          {selector: '#fontslist', offset: 50, callback: function(el){
+               Materialize.showStaggeredList($(el));
+          }},
+          {selector: "#designvisionimpl",offset: 50, callback: function(el){
+
+
+               $('#designvision').toggleClass('scale-in');
+          }},
+        ];
+        Materialize.scrollFire(options);
+
+    </script>
+
+    <!-- Schema.org markup goes here -->
+
+    <!-- Open Graph markup goes here -->
+
+    <!-- Twitter Card markup goes here -->
+
+
+  </head>
+  <body>
+    <!-- Alot of web professionals are refraining from using header anymore
+         including AListApart thus I have refarined from using it
+
+         If you feel you really need it and have verified that will not mess up
+         screen readers, than by all means enclose the navbar-fixed div tags with
+         those header tags.
+
+         Note, that I prefer to have my dropdown menu below my the
+         firm address and phone as its more visual pleasing than having
+         the dropdown menu cover the firm address and phone when
+         the viewer is exploring the dropdown menus. Your usage may
+         vary.
+
+    -->
+    <div class="navbar-fixed">
+      <nav id="mynavbar" class=" nav-extended my-z-depth-1" role="navigation">
+        <!-- same container css class as footer so that they vertically align -->
+        <div class="nav-wrapper container">
+          <!-- dopdown definitions -->
+          <ul id="about" class="dropdown-content my-z-depth-1">
+             <li><a href="about-intro.html">Intro</a></li>
+             <li><a href="about-contact.html">Contact</a></li>
+             <li><a href="about-careers.html">Careers</a></li>
+             <li><a href="about-team.html">Team</a></li>
+          </ul>
+          <ul id="news" class="dropdown-content my-z-depth-1">
+             <li><a href="news-blog.html">Blog</a></li>
+             <li><a href="news-events.html">Events</a></li>
+             <li><a href="news-newsletter.html">Newsletter</a></li>
+          </ul>
+          <ul id="services" class="dropdown-content my-z-depth-1">
+             <li><a href="services-intro.html">Intro</a></li>
+             <li><a href="services-clientgallery.html">Clients</a></li>
+             <li><a href="services-packages.html">Packages</a></li>
+          </ul>
+          <ul id="ecom" class="dropdown-content my-z-depth-1">
+            <li><a href="ecom-ecart.html">eCart</a></li>
+            <li><a href="ecom-invoice.html">Invoice</a></li>
+            <li><a href="ecom-orders.html">Orders</a></li>
+            <li><a href="ecom-products.html">Products</a></li>
+          </ul>
+          <ul id="docs" class="dropdown-content my-z-depth-1">
+           <li><a href="docs-intro.html">Intro</a></li>
+           <li><a href="docs-credits.html">Credits</a></li>
+           <li><a href="docs-features.html">Features</a></li>
+           <li><a href="docs-pages.html">Pages</a></li>
+           <li><a href="docs-setup.html">SetUp</a></li>
+          </ul>
+          <!-- mobile hamburger menu activation button -->
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <ul class="top-menu hide-on-med-and-down">
+            <li><a href="index.html"><img src="assets/images/orangedesignlogo-175x48.png"></a></li>
+            <li>&nbsp;&nbsp;&nbsp;Suite 12, 56 Monon Street, Westville, IN 46391 USA</li>
+            <!-- href'ing the phone so we can use the tel: breaks things, so not using at the moment in
+                 this prticular space of the website -->
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1-877-666-6767</li>
+          </ul>
+          <!-- logo for mobile-->
+          <a href="index.html" class="brand-logo hide-on-large-only center"><img src="assets/images/orangedesignlogo-175x48.png"></a>
+          <!-- signin and cart -->
+          <ul class="signincart right">
+                <!-- Not sure why a font-awesome icon goofs up when we add more than one here so
+                     using lock_outline and lock_open from material-icons-->
+                <li><a href="signout.html"><i class="material-icons">lock_outline</i></a></li>
+                <li><a href="ecom-cart.html"><i class="fa  fa-shopping-cart"></i>4</a></li>
+          </ul>
+
+        </div>
+        <!-- Materialize docs are wrong, nav-content for nav-extended needs to be outside
+             of the nav-wraper tags
+        -->
+        <div class="nav-content">
+          <ul class="bottom-menu hide-on-med-and-down ">
+            <li><a class="dropdown-button" data-beloworigin="true" data-hover="true" href="#!" data-activates="about">About<i class="material-icons right">arrow_drop_down_circle</i></a></li>
+            <li><a class="dropdown-button" data-beloworigin="true" data-hover="true" href="#!" data-activates="news">News<i class="material-icons right">arrow_drop_down_circle</i></a></li>
+            <li><a class="dropdown-button" data-beloworigin="true" data-hover="true" href="#!" data-activates="services">Services<i class="material-icons right">arrow_drop_down_circle</i></a></li>
+            <li><a class="dropdown-button" data-beloworigin="true" data-hover="true" href="#!" data-activates="ecom">eCom<i class="material-icons right">arrow_drop_down_circle</i></a></li>
+            <li><a class="dropdown-button" data-beloworigin="true" data-hover="true" href="#!" data-activates="docs">Docs<i class="material-icons right">arrow_drop_down_circle</i></a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- slide-out menu definition
+
+          needs to be outside of the navbar-fixed div tags to work properly
+     -->
+  <ul id="mobile-demo" class="side-nav my-z-depth-1">
+    <li>
+      <!-- since viewers will see this on mobile,
+           might as well do a little call-to-action
+           as far as listing the support email-->
+      <div class="user-view">
+           <div class="background">
+              <img class="responsive-img" src="assets/images/slides/stoicpurpose-slideone.png">
+           </div>
+           <!-- remember we have limited space here, so its the most
+                important possible calls-to-action non-menu stuff from
+                the desktop navbar goes here -->
+           <a href="#!email"><span class="white-text email">support@orangedesign.io</span></a>
+           <a href="#!phone"><span class="white-text phone"><a href="tel:1-877-666-6767" class="white-text">1-877-666-6767</a></span></a>
+      </div>
+    </li>
+    <li class="no-padding">
+       <ul class="collapsible collapsible-accordion my-z-depth-1">
+            <li>
+              <a class="collapsible-header">About<i class="material-icons">arrow_drop_down</i></a>
+              <div class="collapsible-body">
+                  <ul>
+                        <li><a href="about-intro.html">Intro</a></li>
+                        <li><a href="about-contact.html">Contact</a></li>
+                        <li><a href="about-careers.html">Careers</a></li>
+                        <li><a href="about-team.html">Team</a></li>
+                   </ul>
+               </div>
+            </li>
+       </ul>
+     </li>
+
+     <li class="no-padding">
+          <ul class="collapsible collapsible-accordion my-z-depth-1">
+             <li>
+                <a class="collapsible-header">News<i class="material-icons">arrow_drop_down</i></a>
+                <div class="collapsible-body">
+                   <ul>
+                      <li><a href="news-blog.html">Blog</a></li>
+                       <li><a href="news-events.html">Events</a></li>
+                       <li><a href="news-newsletter.html">Newsletter</a></li>
+                   </ul>
+                 </div>
+              </li>
+            </ul>
+      </li>
+      <li class="no-padding">
+        <ul class="collapsible collapsible-accordion my-z-depth-1">
+            <li>
+               <a class="collapsible-header">Services<i class="material-icons">arrow_drop_down</i></a>
+               <div class="collapsible-body">
+                 <ul>
+                   <li><a href="services-intro.html">Intro</a></li>
+                   <li><a href="services-clientgallery.html">Clients</a></li>
+                   <li><a href="services-packages.html">Packages</a></li>
+                 </ul>
+               </div>
+             </li>
+           </ul>
+        </li>
+          <li class="no-padding">
+            <ul class="collapsible collapsible-accordion my-z-depth-1">
+                <li>
+                   <a class="collapsible-header">eCom<i class="material-icons">arrow_drop_down</i></a>
+                   <div class="collapsible-body">
+                     <ul>
+                       <li><a href="ecom-ecart.html">eCart</a></li>
+                       <li><a href="ecom-invoice.html">Invoice</a></li>
+                       <li><a href="ecom-orders.html">Orders</a></li>
+                       <li><a href="ecom-products.html">Products</a></li>
+                     </ul>
+                   </div>
+                 </li>
+               </ul>
+            </li>
+        <li class="no-padding">
+           <ul class="collapsible collapsible-accordion my-z-depth-1">
+              <li>
+                 <a class="collapsible-header">Docs<i class="material-icons">arrow_drop_down</i></a>
+                 <div class="collapsible-body">
+                    <ul>
+                      <li><a href="docs-intro.html">Intro</a></li>
+                      <li><a href="docs-credits.html">Credits</a></li>
+                      <li><a href="docs-features.html">Features</a></li>
+                      <li><a href="docs-pages.html">Pages</a></li>
+                      <li><a href="docs-setup.html">SetUp</a></li>
+                    </ul>
+                </div>
+             </li>
+          </ul>
+       </li>
+     </ul>
+     <!--
+         Fullscreen slider, to see how I adjust page content to account for size
+         of this fullscreen slider see the main-content-wrapper CSS class in
+         the style.css file
+     -->
+     <div class="slider fullscreen myslider">
+       <ul class="slides">
+         <li>
+           <img src="assets/images/slides/stoicpurpose-slideone.png"> <!-- random image -->
+               <div class="caption  center-align">
+
+                 <i class="fa fa-3x fa-paper-plane"></i>
+                <h2 class="caption-title">Orange Purpose</h2>
+                <h5 class="white-text caption-body">With transitions that are Mobile Ready</h5>
+                <a href="docs-features.html" class="btn waves-effect waves-light my-z-depth-1">Features</a>
+               </div>
+          </li>
+         <li>
+               <img src="assets/images/slides/stoicpurpose-slidetwo.png"> <!-- random image -->
+               <div class="caption  right-align">
+
+                 <i class="fa fa-3x fa-desktop"></i>&nbsp;&nbsp;<i class="fa fa-3x fa-mobile"></i>&nbsp;&nbsp;<i class="fa fa-3x fa-tablet"></i>&nbsp;&nbsp;<i class="fa fa-3x fa-tv"></i>
+                 <h2 class="caption-title">Responsive</h2>
+                 <h5 class="white-text caption-body">Made mobile-ready</h5>
+                 <a href="docs-features.html" class="btn waves-effect waves-light my-z-depth-1">Features</a>
+              </div>
+         </li>
+         <li>
+              <img src="assets/images/slides/stoicpurpose-slidethree.png"> <!-- random image -->
+              <div class="caption  left-align">
+
+                <i class="fa fa-3x fa-html5"></i>&nbsp;&nbsp;<i class="fa fa-3x fa-css3"></i>&nbsp;&nbsp;<i class="fa fa-3x fa-safari"></i>&nbsp;&nbsp;<i class="fa fa-3x fa-chrome"></i>&nbsp;&nbsp;<i class="fa fa-3x fa-firefox"></i>&nbsp;&nbsp;<i class="fa fa-3x fa-internet-explorer"></i>&nbsp;&nbsp;<i class="fa fa-3x fa-opera"></i>
+                <h2 class="caption-title">Standards Compliant</h2>
+                <h5 class="white-text caption-body">Forwards compatible with web standards compliant code</h5>
+                <a href="docs-intro.html" class="btn waves-effect waves-light my-z-depth-1">Docs</a>
+              </div>
+         </li>
+          <li>
+            <img src="assets/images/slides/stoicpurpose-slidefour.png"> <!-- random image -->
+              <div class="caption  center-align">
+
+                  <i class="fa fa-3x fa-users"></i>
+                  <h2 class="caption-title">UX-Usability</h2>
+                   <h5 class="white-text caption-body">Designed with the end viewer in-mind</h5>
+                   <a href="docs-features.html" class="btn waves-effect waves-light my-z-depth-1">Features</a>
+              </div>
+           </li>
+       </ul>
+   </div>
+   <!-- wrap content so that we can adjust downward to account for fullscreen slider -->
+   <div class="main-content-wrapper">
+     <main>
+       <!-- promo section -->
+       <div class="container">
+       <div id="promo" class=" section ">
+         <div class="row">
+           <div class="col l4 s12">
+              <div class="card-panel my-z-depth-1">
+                <i  class="fa fa-2x fa-html5"></i><i  class="fa fa-2x fa-css3 "></i>
+                <div class="card-content">
+                  <h4 class="card-header">All Browsers</h4>
+                  <p>Standards compliant code that works in all browsers and will work in future browser versions.</p>
+                </div>
+              </div>
+           </div>
+           <div class="col l4 s12 ">
+              <div class="card-panel my-z-depth-1 ">
+                <i class=" fa fa-2x fa-desktop"></i><i class=" fa fa-2x fa-mobile"></i><i class=" fa fa-2x fa-tablet"></i><i class="fa fa-2x fa-tv"></i>
+                <div class="card-content">
+                  <h4 class="card-header">UX</h4>
+                  <p class="">Delivering exciting and interesting web-interfaces in both desktop and mobile.</p>
+                </div>
+              </div>
+           </div>
+           <div class="col l4 s12">
+              <div class="card-panel my-z-depth-1">
+                <i class="fa fa-2x fa-bell-o"></i><i class="fa fa-2x fa-diamond"></i>
+                <div class="card-content">
+                  <h4 class="card-header">Flair</h4>
+                  <p>Adding that extra flair, that entices the viewer to keep reading and exploring your site.</p>
+                </div>
+              </div>
+           </div>
+         </div>
+       </div>
+     </div>
+       <!-- Features -->
+       <div class="container my-special-background"
+       <div id="features" class="section ">
+         <!-- the design idea is not to use this coloring all the time in
+              each page of site, just on certain pages where one needs to yell
+              something about a particular section of content
+
+              the general gist is to choose one particular section of content to
+              highlight this way as we want to grab the viewer's attention as they
+              scan down the page.
+            -->
+         <div class="row  ">
+           <div class="section-title white-text">
+             <h2 id="featurestitle" class="scale-transition scale-out center">Features</h2>
+           </div>
+           <div class="col l6 s12 ">
+               <div class="card-panel transparent  z-depth-0">
+                 <div class="card-content">
+                   <h4 class="card-header white-text">Pages</h4>
+                   <p class="white-text">Pages for all your site needs including:</p>
+                   <ul id="pageslist" class="white-text">
+                     <li><i class="fa fa-check-circle-o red-text"></i>About Section Pages, including careers and team</li>
+                     <li><i class="fa fa-check-circle-o red-text"></i>News Section Pages, including events and newsletter</li>
+                     <li><i class="fa fa-check-circle-o red-text"></i>Services Section Pages, including clients and packages</li>
+                     <li><i class="fa fa-check-circle-o red-text"></i>Docs explainging how to use this web template package</li>
+                     <li><i class="fa fa-check-circle-o red-text"></i>Pages such as 404, TOS, and privacy</li>
+                     <li><i class="fa fa-check-circle-o red-text"></i>Sample homepage showing correct use of hero banners and other call-to-action secrets</li>
+                   </ul>
+                 </div>
+               </div>
+           </div>
+           <div class="col l6 s12 ">
+               <div class="card-panel transparent z-depth-0 ">
+                 <div class="card-content white-text">
+                   <h4 class="card-header">Extras</h4>
+                   <p>Because who does not need extras?</p>
+                   <ul id="extraslist" class="">
+                     <li><i class="fa fa-check-circle-o red-text"></i>Landing Pages, incuding book, event, newsletter,  and mobile app</li>
+                     <li><i class="fa fa-check-circle-o red-text"></i>Font Awesome icons</li>
+                     <li><i class="fa fa-check-circle-o red-text"></i>My CSS helper classes, including container-fluid for the bleed-to-the-edge effect for your website content</li>
+                     <li><i class="fa fa-check-circle-o red-text"></i>Extra comments in CSS, JS, and HTML explaining why certain things are set a certain way and explanations of work-around code</li>
+                   </ul>
+                 </div>
+               </div>
+           </div>
+         </div>
+       </div>
+       <!-- Design Implementation -->
+       <div class="container">
+       <div  id="designimpl" class="section ">
+         <div class="row">
+           <div class="section-title">
+             <h2 id="designimplementation" class="scale-transition scale-out center">Design Implementation</h2>
+           </div>
+           <div class="col l6 s12">
+             <div class="card-panel my-z-depth-1">
+               <div class="card-content">
+                 <h4 class="card-header">Fonts</h4>
+                 <p>The font choices needed to relfect the balance between corporate sites and easy of readability while at the same time reflect the swiss international(mod-ish) design style. Thus, the following fonts were chosen:</p>
+                 <ul id="fontslist">
+                   <li><h4>Roboto</h4></li>
+                   <li class="roboto-slab-font"><h4>Roboto Slab</h4></li>
+                   <li class="roboto-mono-font"><h4>Roboto Mono</h4></li>
+                   <li class="roboto-condensed-font"><h4>Roboto Condensed</h4></li>
+                 </ul>
+               </div>
+             </div>
+           </div>
+           <div class="col l6 s12">
+             <div class="card-panel my-z-depth-1">
+               <div class="card-content">
+                 <h4 class="card-header">Trade-Offs</h4>
+                 <p>A choice was made to use those design items on desktop, that while were not available on mobile, could be implemented in a different way on mobile. Thus, getting as close as possible to delivering fully equal viewing experiences on both desktop and mobile.</p>
+
+                 <p>Sometimes, that meant avoiding the choice of a verrtical slider and implementing a better designed horizontal slider design on desktop in order to bring the same viewing experience to mobile. Soemtimes, it meant avoiding a choice of a vertically offset card overlay as a section title and section description on desktop in order to give the same viewing expereience to both desktop and mobile on viewing that section title and section description.</p>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+       <!-- Design Vision -->
+       <div class="container">
+       <div id="designvisionimpl"  class="section">
+         <div class="row">
+           <div class="section-title">
+            <h2 id="designvision" class="scale-transition scale-out center">Design Vision</h2>
+          </div>
+          <div class="col l6 s12  ">
+             <div class="card-panel my-z-depth-1 ">
+               <div class="card-content">
+                 <h4 class="card-header">Modernism</h4>
+                 <p>The Modernism movement is not just something that makes you squint hard at a Musuem painting trying to determine what meaning the painter meant. It's a human ambition to derive a new meaning that does not rely upon un-factual inventions but human mind  inventions to understand the factual universe.</p>
+
+                 <p>In a blink of an eye, the web-and-internet implementation became the new modernism movement.The inter-connective-ness of the different tribes and that freedom to connect, relate, and improve knowledge becoem the extension of modernims itself. One of the ways I can visualize that for the viewer is not limiting web links to just ones for the website itself.</p>
+               </div>
+             </div>
+           </div>
+           <div class="col l6 s12 ">
+             <div class="card-panel my-z-depth-1 ">
+               <div class="card-content">
+                 <h4 class="card-header">The Web Movement, Successor to Modernism</h4>
+                 <p>Rather than the un-factual one-family tribe against all others, what does a group of inter-connected tribes look like as a human movement? Yes, one can say the web itself is that movement but how does one convey that visually in the web-interface set of implementations?</p>
+
+                 <p>Transitions help me visuallize for the website viewer the impression that the website and the web-internet-interface is breathing-living enitity that, unlike the ships in aliens, travels with us on our journey to improve the human race and the universe. My design vision goal is to show that we have this living and breathing organisms  of web that ravels with us to improve human-kind and the universe.</p>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+     </main>
+     <!-- footer -->
+     <footer id="pagefooter" class="page-footer ">
+         <!-- usually the best way to do a footer is 4-col desktop, 2-col tablet, and
+              1-col phone as it balances the space and layout somewhat consistently
+              for all platforms
+
+             make sure to test on all platforms as when you use icons, once in awhile
+             oen has to pad the bottom of a column with br's to get columns
+             to line up properly on the smaller platforms
+          -->
+         <div class="container">
+           <div class="row">
+             <div class="col l3 m6 s12">
+               <h5 class="white-text">Contact</h5>
+               <ul>
+                 <li><a class="white-text" href="#!"><i class="fa fa-envelope amber-text text-lighten-2 "></i>&nbsp;&nbsp;sales@orangedesign.io</a></li>
+                 <li><a class="white-text" href="#!"><i class="fa fa-envelope amber-text text-lighten-2"></i>&nbsp;&nbsp;careers@orangendesign.io</a></li>
+                 <li><a class="white-text" href="#!"><i class="fa fa-skype amber-text text-lighten-2"></i>&nbsp;&nbsp;biz.orangedesign</a></li>
+                 <li><a class="white-text" href="#!"><i class="fa fa-slack amber-text text-lighten-2"></i>&nbsp;&nbsp;orangedesign</a></li>
+                 <li><a class="white-text" href="tel:1-877-456-4567"><i class="fa fa-phone amber-text text-lighten-2"></i>&nbsp;&nbsp;&nbsp;1-877-666-6767</a></li>
+               </ul>
+
+             </div>
+             <div class="col l3 m6 s12">
+               <h5 class="white-text">Address</h5>
+               <h5 class="white-text"><i class="fa  fa-address-card-o amber-text text-lighten-2"></i></h5>
+               <!-- Remember, to repeat your company mailing address info in your schema.org declaration in the html head of your
+                    website. -->
+               <h6 class="white-text">Orange  Design<br/>
+                                      Suite 12<br/>
+                                      56 Monon Street<br/>
+                                      Westville, IN 46391<br/>
+                                      USA</h6>
+                                      <br/>
+                                      <br/>
+             </div>
+             <div class="col l3 m6 s12">
+               <!-- Not to repeat navigation, but to spark a reminder of certain
+                    website entry points that the viewer may want to visit once
+                    they have scanned down all the way to the footer
+                  -->
+               <h5 class="white-text">Navigation</h5>
+               <ul>
+                 <li><a class="white-text" href="about-intro.html"><i class="fa fa-info amber-text text-lighten-2"></i>&nbsp;&nbsp;&nbsp;&nbsp;About</a></li>
+                 <li><a class="white-text" href="about-careers.html"><i class="fa fa-users amber-text text-lighten-2"></i>&nbsp;&nbsp;Careers</a></li>
+                 <li><a class="white-text" href="tos.html"><i class="fa fa-handshake-o amber-text text-lighten-2"></i>&nbsp;Terms Of Service</a></li>
+                 <li><a class="white-text" href="privacy.html"><i class="fa fa-lock amber-text text-lighten-2"></i>&nbsp;&nbsp;&nbsp;&nbsp;Privacy</a></li>
+                 <li><a class="white-text" href="sitemap.html"><i class="fa fa-sitemap amber-text text-lighten-2"></i>&nbsp;&nbsp;&nbsp;SiteMap</a></li>
+               </ul>
+             </div>
+             <div class="col l3 m6 s12">
+               <h5 class="white-text">Connect</h5>
+               <!-- its tempting to use icons here, better to use both to balance with
+                    what I did in the other footer column -->
+               <ul>
+
+                 <li><a  href="#!" target="_blank" class="white-text"><i class="fa fa-facebook-square amber-text text-lighten-2"></i>&nbsp;Facebook</a></li>
+                 <li><a  href="#!" target="_blank" class="white-text"><i class="fa fa-google-plus-square amber-text text-lighten-2"></i>&nbsp;Google+</a></li>
+                 <li><a  href="#!" target="_blank" class="white-text"><i class="fa fa-linkedin-square amber-text text-lighten-2"></i>&nbsp;LinkedIn</a></li>
+                 <li><a  href="#!" target="_blank" class="white-text"><i class="fa fa-twitter-square amber-text text-lighten-2"></i>&nbsp;Twitter</a></li>
+                 <li><a  href="#!" target="_blank" class="white-text"><i class="fa fa-youtube-square amber-text text-lighten-2"></i>&nbsp;YouTube</a></li>
+               </ul>
+
+             </div>
+           </div>
+         </div>
+         <div class="footer-copyright">
+           <div class="container">
+           &copy;2017 Copyright, allrights reserved made by <a href="http://www.uplabs.com/fred_grott" class="white-text"><b>Fred Grott</b></a> with <a class="white-text" href="http://www.materializecss.com"><b>Materialize CSS Framework</b></a>, <a href="atom.io" class="white-text"><b>Atom</b></a>, and some Material Design flair.
+
+           </div>
+         </div>
+       </footer>
+
+   </div>
+  </body>
+</html>
